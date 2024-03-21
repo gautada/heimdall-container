@@ -7,7 +7,7 @@ FROM docker.io/gautada/alpine:$ALPINE_VERSION as src
 # ╰――――――――――――――――――――╯
 ARG CONTAINER_VERSION="2.6.1"
 ARG HEIMDALL_SERVER_VERSION="$CONTAINER_VERSION"
-ARG HEIMDALL_SERVER_BRANCH=v"$PLANTUML_SERVER_VERSION"
+ARG HEIMDALL_SERVER_BRANCH=v"$HEIMDALL_SERVER_VERSION"
 
 # RUN /sbin/apk add --no-cache git gradle maven openjdk17-jdk ttf-dejavu
 # graphviz
