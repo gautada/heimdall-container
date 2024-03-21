@@ -57,7 +57,10 @@ COPY entrypoint /etc/container/entrypoint
 # ╭―
 # │ APPLICATION        
 # ╰――――――――――――――――――――
+RUN /sbin/apk add --no-cache nginx php83 php-83-ctype php83-curl php83-dom php83-fileinfo php83-mbstring php83-openssl php83-pdo php83-session php83-tokenizer php83-xml php83-pdo_sqlite php83-zip 
 
+
+# filter hash pcre
 
 # ╭―
 # │ CONFIGURATION
