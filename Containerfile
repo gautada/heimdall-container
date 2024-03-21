@@ -13,7 +13,7 @@ ARG HEIMDALL_SERVER_BRANCH=v"$PLANTUML_SERVER_VERSION"
 # graphviz
 
 RUN git config --global advice.detachedHead false
-RUN git clone --branch $HEIMDALL_SERVER_BRANCH --depth 1https://github.com/linuxserver/Heimdall.git heimdall
+RUN git clone --branch $HEIMDALL_SERVER_BRANCH --depth 1 https://github.com/linuxserver/Heimdall.git heimdall
 
 # ╭―
 # │                                                                         
@@ -63,7 +63,7 @@ COPY entrypoint /etc/container/entrypoint
 # │ CONFIGURATION
 # ╰――――――――――――――――――――
 RUN chown -R $USER:$USER /home/$USER 
-USER $USER
+# USER $USER
 VOLUME /mnt/volumes/backup
 VOLUME /mnt/volumes/configmaps
 VOLUME /mnt/volumes/container
