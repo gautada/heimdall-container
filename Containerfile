@@ -60,8 +60,8 @@ RUN /bin/chmod 777 -R /var/log/php83
 # ╭―
 # │ CONFIGURATION
 # ╰――――――――――――――――――――
-RUN chown -R $USER:$USER /home/$USER 
-USER $USER
+RUN /bin/chown -R $USER:$USER /home/$USER 
+# USER $USER
 VOLUME /mnt/volumes/backup
 VOLUME /mnt/volumes/configmaps
 VOLUME /mnt/volumes/container
