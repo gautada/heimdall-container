@@ -45,7 +45,7 @@ WORKDIR /home/heimdall
 RUN git config --global advice.detachedHead false
 RUN git clone --branch $HEIMDALL_SERVER_BRANCH --depth 1 https://github.com/linuxserver/Heimdall.git www
 
-RUN /sbin/apk add --no-cache nginx php83 php83-ctype php83-curl php83-dom php83-fileinfo php83-mbstring php83-openssl php83-pdo php83-session php83-tokenizer php83-xml php83-pdo_sqlite php83-zip 
+RUN /sbin/apk add --no-cache nginx php83 php83-ctype php83-curl php83-dom php83-fileinfo php83-mbstring php83-openssl php83-pdo php83-session php83-tokenizer php83-xml php83-pdo_sqlite php83-zip php83-fpm
 
 RUN /bin/rm /etc/nginx/http.d/*
 COPY http.conf /etc/nginx/http.d/http.conf
