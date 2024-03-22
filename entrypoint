@@ -14,8 +14,8 @@ container_version() {
 container_entrypoint() {
  cd /home/heimdall/www/public
  /usr/bin/sudo /usr/sbin/nginx -g "daemon on;"
- # /usr/bin/sudo /usr/sbin/php-fpm83 -F
- tail -f /dev/null
+ /usr/bin/sudo /usr/sbin/php-fpm83 -F
+ # tail -f /dev/null
 }
 
 
