@@ -55,7 +55,7 @@ COPY php-fpm.conf /etc/php83/php-fpm.conf
 RUN /bin/touch /var/log/php83/error.log /var/log/php83/www.access.log
 RUN /bin/chmod 777 -R /var/log/php83
 
-RUN ln -svf /mnt/volumes/container/app.sqlite /home/heimdall/www/database/app.sqlite
+# RUN ln -svf /mnt/volumes/container/app.sqlite /home/heimdall/www/database/app.sqlite
 
 # ╭―
 # │ CONFIGURATION
