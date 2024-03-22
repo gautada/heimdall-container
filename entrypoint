@@ -12,11 +12,9 @@ container_version() {
 }
 
 container_entrypoint() {
- # /usr/sbin/php-fpm83
- # php-fpm83 -F -O -R -e
- tail -f /dev/null
- 
- # /usr/sbin/nginx -g "daemon off;"
+ # tail -f /dev/null
+ /usr/sbin/nginx -g "daemon on;"
+ /usr/sbin/php-fpm83 -F
 }
 
 
