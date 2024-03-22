@@ -1,6 +1,6 @@
 ARG ALPINE_VERSION=latest
 
-# FROM docker.io/gautada/alpine:$ALPINE_VERSION
+FROM docker.io/gautada/alpine:$ALPINE_VERSION
 
 # ╭―
 # │ METADATA           
