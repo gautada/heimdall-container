@@ -61,7 +61,8 @@ COPY app.sqlite /mnt/volumes/container/app.sqlite
 # ╭―
 # │ CONFIGURATION
 # ╰――――――――――――――――――――
-RUN /bin/chown -R $USER:$USER /home/$USER 
+RUN /bin/chown -R $USER:$USER /home/$USER
+RUN /bin/mkdir -p /home/$USER/tmp 
 USER $USER
 VOLUME /mnt/volumes/backup
 VOLUME /mnt/volumes/configmaps
