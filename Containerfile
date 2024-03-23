@@ -50,6 +50,7 @@ RUN /sbin/apk add --no-cache nginx php83 php83-ctype php83-curl php83-dom php83-
 RUN /bin/rm /etc/nginx/http.d/*
 COPY http.conf /etc/nginx/http.d/http.conf
 COPY nginx.conf /etc/nginx/nginx.conf
+COPY php.ini /etc/php83/php.ini
 COPY www.conf /etc/php83/php-fpm.d/www.conf
 # COPY php-fpm.conf /etc/php83/php-fpm.conf
 RUN /bin/touch /var/log/php83/error.log /var/log/php83/www.access.log
