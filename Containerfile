@@ -66,7 +66,7 @@ RUN /bin/chown -R $USER:$USER /home/$USER
 RUN /bin/mkdir -p /home/$USER/tmp 
 USER $USER
 WORKDIR /home/$USER
-/usr/bin/php83 artisan key:generate
+# /usr/bin/php83 artisan key:generate
 VOLUME /mnt/volumes/backup
 VOLUME /mnt/volumes/configmaps
 VOLUME /mnt/volumes/container
