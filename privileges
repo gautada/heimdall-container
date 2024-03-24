@@ -3,3 +3,5 @@
 %privileged ALL = (ALL) NOPASSWD: /etc/periodic/hourly/container-backup
 %privileged ALL = (ALL) NOPASSWD: /usr/sbin/php-fpm83
 %privileged ALL = (ALL) NOPASSWD: /usr/sbin/nginx
+%privileged ALL = (ALL) NOPASSWD: /bin/chmod
+%privileged ALL = (ALL) NOPASSWD: /bin/chown
