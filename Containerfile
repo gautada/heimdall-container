@@ -57,7 +57,7 @@ RUN /bin/touch /var/log/php83/error.log /var/log/php83/www.access.log
 RUN /bin/chmod 777 -R /var/log/php83
 
 COPY app.sqlite /mnt/volumes/container/app.sqlite
-RUN chown $USER:USER /mnt/volumes/container/app.sqlite
+RUN chown $USER:$USER /mnt/volumes/container/app.sqlite
 RUN ln -svf /mnt/volumes/container/app.sqlite /home/$USER/www/database/app.sqlite
 COPY env.conf /home/$USER/www/env.conf
 # ╭―
