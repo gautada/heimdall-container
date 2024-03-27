@@ -27,7 +27,7 @@ COPY privileges /etc/container/privileges
 # │ BACKUP
 # ╰――――――――――――――――――――
 # RUN /bin/rm -f /etc/periodic/hourly/container-backup
-# COPY backup /etc/container/backup
+COPY backup /etc/container/backup
 
 # ╭―
 # │ ENTRYPOINT
