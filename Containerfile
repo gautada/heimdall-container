@@ -68,7 +68,6 @@ RUN /usr/bin/php83 artisan key:generate
 # ╭―
 # │ CONFIGURATION
 # ╰――――――――――――――――――――
-
 RUN /bin/chown -R $USER:$USER /home/$USER
 USER $USER
 VOLUME /mnt/volumes/backup
